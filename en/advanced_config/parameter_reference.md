@@ -25261,6 +25261,28 @@ Reboot | minValue | maxValue | increment | default | unit
 
 ## Failure Detector
 
+### FD_ALT_LOSS (`FLOAT`) {#FD_ALT_LOSS}
+
+Altitude loss threshold for termination and parachute deployment.
+
+Maximum altitude loss below the setpoint allowed before the vehicle terminates and deploys the parachute. Set to 0 to disable.
+
+
+Reboot | minValue | maxValue | increment | default | unit
+--- | --- | --- | --- | --- | ---
+&nbsp; | 0.0 | 200.0 | 0.5 | 0.0 | m | 
+
+### FD_ALT_LOSS_T (`FLOAT`) {#FD_ALT_LOSS_T}
+
+Altitude loss failure trigger time.
+
+Seconds that the altitude loss threshold must be exceeded before the failure is declared.
+
+
+Reboot | minValue | maxValue | increment | default | unit
+--- | --- | --- | --- | --- | ---
+&nbsp; | 0.02 | 5.0 |  | 1.0 | s | 
+
 ### FD_EXT_ATS_EN (`INT32`) {#FD_EXT_ATS_EN}
 
 Enable PWM input from external ATS for failsafe.
